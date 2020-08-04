@@ -1,0 +1,55 @@
+*{outline:0px}
+		body{font-family:arial; color:#000; background:#fff; margin:0px;}
+		footer, header	{ text-align:center; padding: 15px;}
+		header 			{font-size:18px; background:#333; color:#fff}
+		footer			{font-style: italic; font-size:14px}
+		.container 		{max-width:960px; margin:0 auto;}
+		
+		.h-100			{height:100%}
+		.clearfix 		{clear:both; display:block}
+		section			{width:100%; padding: 10px 25px; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-content: stretch; align-items: flex-start;box-sizing:border-box}
+		.col-9, .col-3 	{float:right; box-sizing:border-box}
+		.col-9			{width:100%; order: 1;}
+		.col-3			{padding:20px; width:100%; text-align:center; order: 2; display:flex; flex: 40 1 auto; align-self: auto; align-self: flex-start;justify-content: center;}
+		button			{background:#72C3DC; padding:8px 14px; border-radius:5px; color:#fff; box-shadow: 0px 4px 0px #6F98A8; text-transform:uppercase; border:none; margin:5px; cursor:pointer}
+		button:hover    {text-decoration:none; outline:0px; box-shadow: 0px 2px 4px #6F98A8; }
+		#shuffle > div  {box-sizing:border-box; font-weight:bold; padding:10px; text-align:center; color:#000; font-size:14px; line-height:20px; width:100%; float:left;  margin:2px 0px; background:#EFEFEF;  position:relative;}
+		#shuffle > div.c1:after,
+		#shuffle > div.c2:after,
+		#shuffle > div.c3:after,
+		#shuffle > div.c4:after,
+		#shuffle > div.c5:after,
+		#shuffle > div.c6:after,
+		#shuffle > div.c7:after,
+		#shuffle > div.c8:after,
+		#shuffle > div.c9:after { width:5px; content:''; position: absolute; left:0; height:100%; top:0;}
+		
+		#shuffle > div.c1:after {background:#6F98A8;}
+		#shuffle > div.c2:after {background:#2B8EAD;}
+		#shuffle > div.c3:after {background:#2F454E;}
+		#shuffle > div.c4:after {background:#2B8EAD;}
+		#shuffle > div.c5:after {background:#2F454E;}
+		#shuffle > div.c6:after {background:#BFBFBF;}
+		#shuffle > div.c7:after {background:#BFBFBF;}
+		#shuffle > div.c8:after {background:#6F98A8;}
+		#shuffle > div.c9:after {background:#2F454E;}
+		
+		@media screen and (min-width: 992px){
+			body			{ background:#EFEFEF;}
+			header 			{border-bottom: 3px solid #BFBFBF; background:none; color:#000}
+			.col-9			{width:70%; order: 1}
+			.col-3			{width:30%; order: 2}
+			section 		{padding:0px}
+			#shuffle > div  {box-sizing:border-box; font-weight:bold; padding:8% 10px ; text-align:center; color:#fff; margin:0; font-size:60px; line-height:60px; width:33.3%; float:left;  }
+		
+			#shuffle > div.c1 {background:#6F98A8;}
+			#shuffle > div.c2 {background:#2B8EAD;}
+			#shuffle > div.c3 {background:#2F454E;}
+			#shuffle > div.c4 {background:#2B8EAD;}
+			#shuffle > div.c5 {background:#2F454E;}
+			#shuffle > div.c6 {background:#BFBFBF;}
+			#shuffle > div.c7 {background:#BFBFBF;}
+			#shuffle > div.c8 {background:#6F98A8;}
+			#shuffle > div.c9 {background:#2F454E;}
+		}
+		
